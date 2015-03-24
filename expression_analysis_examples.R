@@ -36,5 +36,4 @@ options("expressions"=15000)
 
 annot.colors <- c(rep("red", 12), rep("green", 6), rep("cyan", 6), rep("purple",6))
 
-heatmap.2(log10(exp.data+1), labRow = NA, trace="none", cexCol=0.7, margins = c(10, 2),
-					ColSideColors=annot.colors)
+heatmap.2(log10(exp.data+1), labRow = NA, trace="none", cexCol=0.7, margins = c(10, 2),	ColSideColors=annot.colors)
