@@ -39,11 +39,8 @@ library(Gviz)
 gtrack <- GenomeAxisTrack()
 itrack <- IdeogramTrack(genome = "hg19", chromosome = myChr)
 
-txTrack <- GeneRegionTrack(txdb, genome = "hg19", chromosome = myChr,
-													 name = "Genes", showId=TRUE, col="black", fill="deepskyblue2", geneSymbol=TRUE)
-
-txSnpTrack <- AnnotationTrack(range=tx.snp.ranges, name="SNPs in transcripts", 
-															chromosome=myChr, from=myStart, to=myEnd, genome="hg19", col="red")
+txTrack <- GeneRegionTrack(txdb, genome = "hg19", chromosome = myChr, name = "Genes", showId=TRUE, col="black", fill="deepskyblue2", geneSymbol=TRUE)
+txSnpTrack <- AnnotationTrack(range=tx.snp.ranges, name="SNPs in transcripts", chromosome=myChr, from=myStart, to=myEnd, genome="hg19", col="red")
 
 snpTrack <- AnnotationTrack(range=snp.ranges, name="all SNPs", col="gray")
 
